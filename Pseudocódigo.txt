@@ -1,0 +1,40 @@
+interface GeneradorSugerencias{
+    List<Sugerencia> generarSugerenciaDesde(List<Prenda> prendasAptas)
+}
+class Usuario implements GeneradorSugerencias{
+    generarSugerenciaAtuendo()
+}
+class Prenda{
+    TipoDePrenda tipoDePrenda, 
+    Material material, 
+    Color colorPrincial,
+    Color colorSecundario,
+    Trama trama,
+    temperaturaAdecuada
+}
+class Ciudad{
+    ciudad
+
+    climaActual(){
+      ClimaAdapter p = new ClimaAdapter();
+      return p.obtenerClima();
+  }
+}
+
+
+interface AccuWeatherAPI
+abstract class Clima{
+    abstratc obtenerClima()
+}
+
+class ClimaAdapter implements AccuWeatherAPI{
+
+}
+
+
+class Sugerencia{
+    parteSuperior
+    parteInferior
+    calzado
+    accesorios
+}
